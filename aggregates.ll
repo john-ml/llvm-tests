@@ -68,8 +68,8 @@ left:
   %b = extractvalue %sum %x, 1, 1
   %r = trunc i64 %a to i32
   %r0 = sext i32 %r to i64
-  %r1 = shl i64 %r1, 32
-  %r2 = or i64 %r2, %b
+  %r1 = shl i64 %r0, 32
+  %r2 = or i64 %r1, %b
   ret i64 %r2
 right:
   %r3 = extractvalue %sum %x, 1, 0
